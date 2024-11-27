@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow");
 
 body {
-    font: 14px/1.5 "PT Sans Narrow", sans-serif;
-    background: #080e24 url(http://neography.com/experiment/circles/solarsystem/bg.jpg) repeat;
-    color: #626668;
+    font: 14px/1.5 "PT Sans Narrow", Arial, sans-serif;
+    background: url("assets/DeepSpcae.webp") fixed no-repeat;
+    background-size: cover;
+    color: #222730f5;
+
 }
 
 /* Solar System Styles */
@@ -158,18 +160,7 @@ ul.solarsystem li.mars span {
     top: 0px;
     left: 175px;
 }
-ul.solarsystem li.asteroids_meteorids {
-    top: 155px;
-    left: 315px;
-    z-index: 1;
-    background: url(http://neography.com/experiment/circles/solarsystem/asteroids_meteorids.png) no-repeat 0 0;
-    width: 330px;
-    height: 330px;
-    -webkit-border-radius: 165px;
-    -moz-border-radius: 165px;
-    border-radius: 165px;
-    border: none;
-}
+
 ul.solarsystem li.jupiter {
     width: 340px;
     height: 340px;
@@ -379,4 +370,84 @@ ul.solarsystem li.pluto {
 
 
 
+
+.clearfix {
+  margin-top: calc(60px + 1em);
+}
+
+.navbar {
+  background-color: rgba(35, 46, 54, 0.548);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 1em;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar li {
+  margin-right: 10px;
+  transform: rotate(-5deg);
+}
+
+.navbar li:hover {
+    animation-timing-function:bezier(0.25, 0.46, 0.45, 0.94);
+    animation-duration: 0.3s;
+    animation-name: rotate-nav-btn;
+    animation-fill-mode: forwards;
+  }
+@keyframes rotate-nav-btn {
+    from { transform: rotate(-5deg); }
+    to { transform: rotate(0deg) scale(1.25) }
+}
+.navbar li {
+    animation-timing-function:bezier(0.25, 0.46, 0.45, 0.94);
+    animation-duration: 0.3s;
+    animation-name: unrotate-nav-btn;
+    animation-fill-mode: forwards;
+  }
+@keyframes unrotate-nav-btn {
+    from { transform: rotate(0deg) scale(1.25);  }
+    to { transform: rotate(-5deg); }
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #ccc;
+  transform: rotate(0);
+}
+
+.navbar .login-btn, .navbar .signup-btn,
+.navbar .quiz-btn, .navbar .learn-more-btn, .navbar .contact-us-btn {
+  background-color: #444d58;
+  color: #9bf7fd;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.navbar .login-btn:hover, .navbar .signup-btn:hover,
+.navbar .quiz-btn:hover, .navbar .learn-more-btn:hover, .navbar .contact-us-btn:hover {
+  background-color: #3e4149;
+}
 
