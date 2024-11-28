@@ -129,6 +129,8 @@ ul.solarsystem li.earth {
     top: 210px;
     left: 370px;
     z-index: 97;
+
+    
 }
 ul.solarsystem li.earth span {
     background: #06c;
@@ -260,12 +262,13 @@ ul#descriptions {
 }
 ul#descriptions h2 {
     cursor: pointer;
-    color: #386077;
+    color: #6aa9ce;
+    text-align: center;
     -webkit-transition: all 0.15s ease-in;
     -moz-transition: all 0.15s ease-in;
     -o-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
-    font-size: 20px;
+    font-size: 25px;
     position: relative;
     z-index: 101;
     -webkit-transform: scale(1);
@@ -273,9 +276,12 @@ ul#descriptions h2 {
     -o-transform: scale(1);
     transform: scale(1);
 	margin-bottom: -15px;
+    background-color: #1f274793;
+    border-radius: 15px;
 }
 ul#descriptions h2:hover {
-   color: #aa4200; 
+   color: #000000;
+    background-color: #6aa9ce;
     -webkit-transform: scale(1.08);
     -moz-transform: scale(1.08);
     -o-transform: scale(1.08);
@@ -297,12 +303,12 @@ ul#descriptions li p {
     -moz-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
-    background: #0f132c;
+    background: #20264d8f;
     padding: 30px;
-    color: #767892;
+    color: #6aa9ce;
     line-height: 1.7;
     z-index: 100;
-    border: 1px solid #1c203c;
+    border: 1px solid #1c203cc7;
 }
 ul#descriptions h2:hover+p {
     visibility: visible;
@@ -376,17 +382,16 @@ ul.solarsystem li.pluto {
 }
 
 .navbar {
-  background-color: rgba(35, 46, 54, 0.548);
+  background-color: rgba(37, 49, 75, 0.589);
   backdrop-filter: blur(10px);
   color: #fff;
   padding: 1em;
-  text-align: left;
+  text-align: center;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  border-radius: 10px;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  border-radius: 20px;
 }
 
 .navbar ul {
@@ -424,30 +429,31 @@ ul.solarsystem li.pluto {
     to { transform: rotate(-5deg); }
 }
 
+
 .navbar a {
-  color: #fff;
+  color: #6aa9ce;
   text-decoration: none;
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .navbar a:hover {
-  color: #ccc;
+  color: #3b75f1d7;
   transform: rotate(0);
 }
 
 .navbar .login-btn, .navbar .signup-btn,
 .navbar .quiz-btn, .navbar .learn-more-btn, .navbar .contact-us-btn {
-  background-color: #444d58;
+  background-color: #282750ce;
   color: #9bf7fd;
   padding: 10px 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
-  margin-right: 5px;
+  margin-right: 20px;
 }
 
 .navbar .login-btn:hover, .navbar .signup-btn:hover,
 .navbar .quiz-btn:hover, .navbar .learn-more-btn:hover, .navbar .contact-us-btn:hover {
-  background-color: #3e4149;
+  background-color: #0e041ad5;
 }
 
