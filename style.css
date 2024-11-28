@@ -316,7 +316,7 @@ ul#descriptions h2:hover+p {
     left: -280px;
 }
 
-/* CSS3 Animations */
+
 ul.solarsystem li {
     animation-iteration-count:infinite;
     animation-timing-function:linear;
@@ -373,16 +373,12 @@ ul.solarsystem li.pluto {
 
 
 
-
-
-
-
 .clearfix {
   margin-top: calc(60px + 1em);
 }
 
 .navbar {
-  background-color: rgba(37, 49, 75, 0.589);
+  background-color: rgba(25, 32, 48, 0.589);
   backdrop-filter: blur(10px);
   color: #fff;
   padding: 1em;
@@ -431,20 +427,20 @@ ul.solarsystem li.pluto {
 
 
 .navbar a {
-  color: #6aa9ce;
+  color: #6388ee9c;
   text-decoration: none;
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .navbar a:hover {
-  color: #3b75f1d7;
+  color: #945aff;
   transform: rotate(0);
 }
 
 .navbar .login-btn, .navbar .signup-btn,
 .navbar .quiz-btn, .navbar .learn-more-btn, .navbar .contact-us-btn {
-  background-color: #282750ce;
-  color: #9bf7fd;
+  background-color: #1f1f3a80;
+  color: #dbdaf7;
   padding: 10px 15px;
   border: none;
   border-radius: 15px;
