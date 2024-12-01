@@ -387,6 +387,7 @@ ul.solarsystem li.pluto {
   top: 10px;
   left: 10px;
   right: 10px;
+  z-index: 1000;
   border-radius: 20px;
 }
 
