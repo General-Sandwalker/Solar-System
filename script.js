@@ -1,9 +1,4 @@
 
-tailwind.config = {
-    darkMode: 'class',
-    theme: {
-        extend: {}
-    }
 
 function ajouter(){
     var name=document.getElementById("firstname").value.trim();
@@ -34,6 +29,8 @@ function ajouter(){
     alert("Form submitted successfully!");
     return true;
 }
+
+
 function verif(ch){
     var ok=true;
     ch=ch.toUpperCase();

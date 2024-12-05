@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/styles/quiz.css">
+    
+	<script src="https://cdn.tailwindcss.com">
+		tailwind.config = {
+			darkMode: 'class',
+			theme: {
+				extend: {}
+			}
+		}
+	</script>
+	<style type="text/tailwindcss">
+		@tailwind base;
+		@tailwind components;
+		@tailwind utilities;
+  </style>
+	<title>Learn more</title>
+</head>
+<nav class="nav-bar">
+    <ul>
+        <li>
+            <div class="relative h-10 inline-flex  group">
+                <div
+                    class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+                </div>
+                <a href="/" title="home"
+                    class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    role="button">Home
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="relative h-10 inline-flex  group">
+                <div
+                    class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+                </div>
+                <a href="/pages/quiz.html" title="quiz"
+                    class="quiz-btn relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    role="button">Quiz
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="relative h-10 inline-flex  group">
+                <div
+                    class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+                </div>
+                <a href="/pages/learn-more.html" title="learn more"
+                    class="learn-more-btn relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    role="button">Learn More
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="relative h-10 inline-flex  group">
+                <div
+                    class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+                </div>
+                <a href="/pages/form.html" title="signup"
+                    class="signup-btn relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    role="button">Signup
+                </a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<body style="margin-top: 101px;">
+	<div class="container">
+		<div id="quiz">
+			<h1>Quiz</h1>
+			
+			<hr style="margin-bottom: 20px">
+
+			<p id="question"></p>
+			
+			<div class="button-grp grid grid-cols-2">
+				<button id="btn0"><span id="choice0"></span></button>
+				<button id="btn1"><span id="choice1"></span></button>
+				<button id="btn2"><span id="choice2"></span></button>
+				<button id="btn3"><span id="choice3"></span></button>
+			</div>
+			
+			<hr style="margin-top: 50px">
+			
+			<footer>
+				<p id="progress">Question x of y</p>
+			</footer>
+		</div>
+	</div>
+
+    <script src="/scripts/quiz.js"></script>
+</body>
+</html>
