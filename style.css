@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow");
 
 body {
-    font: 14px/1.5 "PT Sans Narrow", Arial, sans-serif;
+    font: Arial;
     background: url("assets/DeepSpcae.webp") fixed no-repeat;
     background-size: cover;
     color: #222730f5;
@@ -260,7 +260,7 @@ ul#descriptions {
     right: 100px;
     list-style: none;
 }
-ul#descriptions h2 {
+/* ul#descriptions h2 {
     cursor: pointer;
     color: #6aa9ce;
     text-align: center;
@@ -275,10 +275,10 @@ ul#descriptions h2 {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
-	margin-bottom: -15px;
+    margin-top: 3px;
     background-color: #1f274793;
     border-radius: 15px;
-}
+} */
 ul#descriptions h2:hover {
    color: #000000;
     background-color: #6aa9ce;
@@ -377,7 +377,7 @@ ul.solarsystem li.pluto {
   margin-top: calc(60px + 1em);
 }
 
-.navbar {
+.nav-bar {
   background-color: rgba(25, 32, 48, 0.589);
   backdrop-filter: blur(10px);
   color: #fff;
@@ -391,7 +391,7 @@ ul.solarsystem li.pluto {
   border-radius: 20px;
 }
 
-.navbar ul {
+.nav-bar ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -400,12 +400,12 @@ ul.solarsystem li.pluto {
   align-items: center;
 }
 
-.navbar li {
+.nav-bar li {
   margin-right: 10px;
   transform: rotate(-5deg);
 }
 
-.navbar li:hover {
+.nav-bar li:hover {
     animation-timing-function:bezier(0.25, 0.46, 0.45, 0.94);
     animation-duration: 0.3s;
     animation-name: rotate-nav-btn;
@@ -415,7 +415,7 @@ ul.solarsystem li.pluto {
     from { transform: rotate(-5deg); }
     to { transform: rotate(0deg) scale(1.25) }
 }
-.navbar li {
+.nav-bar li {
     animation-timing-function:bezier(0.25, 0.46, 0.45, 0.94);
     animation-duration: 0.3s;
     animation-name: unrotate-nav-btn;
@@ -427,19 +427,18 @@ ul.solarsystem li.pluto {
 }
 
 
-.navbar a {
+.nav-bar a {
   color: #6388ee9c;
   text-decoration: none;
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.navbar a:hover {
+.nav-bar a:hover {
   color: #945aff;
   transform: rotate(0);
 }
 
-.navbar .login-btn, .navbar .signup-btn,
-.navbar .quiz-btn, .navbar .learn-more-btn, .navbar .contact-us-btn {
+.nav-bar {
   background-color: #1f1f3a80;
   color: #dbdaf7;
   padding: 10px 15px;
@@ -449,8 +448,5 @@ ul.solarsystem li.pluto {
   margin-right: 20px;
 }
 
-.navbar .login-btn:hover, .navbar .signup-btn:hover,
-.navbar .quiz-btn:hover, .navbar .learn-more-btn:hover, .navbar .contact-us-btn:hover {
-  background-color: #0e041ad5;
-}
+
 
